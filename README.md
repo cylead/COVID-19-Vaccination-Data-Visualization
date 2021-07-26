@@ -6,4 +6,6 @@ Tools:
 * Visualization: flourish
 
 Example of full vaccinated person per hundred ranking for top 50% population countries:
-![example](./figs/example.gif)
+<p align="center">
+<img src="./figs/example.gif" width="60%" >
+</p>
