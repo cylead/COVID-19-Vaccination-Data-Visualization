@@ -1,6 +1,6 @@
 ### COVID-19 Vaccination Data Visualization
 #### Basic info
-Data source: [Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data) up to 7/19/2021.
+Data source: [Data on COVID-19 (coronavirus) by Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data) up to 7/19/2021.
 
 Tools: 
 * Data processing: Microsoft SQL Server Management & excel
