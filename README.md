@@ -44,16 +44,16 @@ However, the statistical data types of different countries are different, which 
 Here is the bar chart race of `total_vaccinations_per_hundred` data starting from 1/10/2021.
 
 <p align="center">
-<img src="./figs/total.gif" width="60%" >
+<img src="./figs/total.gif" width="80%" >
 </p>
 
 We can find that many top-ranked countries are countries with small populations, so we divide the data of `people_fully_vaccinated_per_hundred` into top 50% population and lower 50% population as follows.
 <p align="center">
-<img src="./figs/top50.gif" width="60%" >
+<img src="./figs/top50.gif" width="80%" >
 </p>
 
 <p align="center">
-<img src="./figs/lower50.gif" width="60%" >
+<img src="./figs/lower50.gif" width="80%" >
 </p>
 
 Analysis (undone):
@@ -62,14 +62,14 @@ Analysis (undone):
 
 Next, we make the Geographical distribution plot of `people_fully_vaccinated_per_hundred`.
 <p align="center">
-<img src="./figs/geo.png" width="70%" >
+<img src="./figs/geo.png" width="100%" >
 </p>
 Analysis:
 Vaccine coverage in Europe and North America is higher.
 
 So let's take a look at the vaccination process in Europe. The time series plot of `new_vaccinations_smoothed_per_million` for the seven most populous countries in Europe is as follows.
 <p align="center">
-<img src="./figs/timeseries.png" width="70%" >
+<img src="./figs/timeseries.png" width="100%" >
 </p>
 
 Except for the United Kingdom and Ukraine, the vaccination process in the other 5 countries is similar, with a gradual increase from January to May 2021, and then a decline.
