@@ -81,4 +81,4 @@ Except for the United Kingdom and Ukraine, the vaccination process in the other 
     * Replace NULL with 0.
     * Rank the columns and rows
     * Add continent to the table
-2. Make the bar chart race at [flourish](https://flourish.studio/)
+2. Make the bar chart race at [flourish](https://flourish.studio/).
