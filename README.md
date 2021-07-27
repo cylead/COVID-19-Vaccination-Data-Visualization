@@ -6,7 +6,6 @@ Tools:
 * Data processing: Microsoft SQL Server Management & excel
 * Visualization: flourish & tableau
 
-
 #### Feature analysis
 First, let us go through the columns in the total data sets, which can be divided into the following categories: 
 * cases: (smoothed) total/new cases/deaths (per million)
