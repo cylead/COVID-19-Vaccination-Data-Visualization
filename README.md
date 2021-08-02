@@ -17,7 +17,6 @@ population (density)
 median_age, aged 65/70 older  
 
 * patients: (weekly) ICU/hospital patients (per million)
-weekly ones
 
 * tests: (smoothed) new/total tests (per thousand), positive rate, tests per case
 
@@ -56,7 +55,7 @@ We can find that many top-ranked countries are countries with small populations,
 </p>
 
 ### Analysis 
-* We surprisingly found out that the number of Gibraltar is more than 100, read the [news](https://www.standard.co.uk/news/uk/gibraltar-covid-vaccination-programme-entire-adult-population-b924942.html) here for more details.
+* We surprisingly found out that the number of Gibraltar is more than 100, read the [news](https://www.standard.co.uk/news/uk/gibraltar-covid-vaccination-programme-entire-adult-population-b924942.html) for more details.
 * The various color makes it hard to analyze, so we just focus on the European countries and get the following chart of `total_vaccinations_per_hundred`.
 <p align="center">
 <img src="./figs/total_eu.gif" width="80%" >
@@ -69,33 +68,23 @@ What about the countries with the top 50% population?
 <img src="./figs/top50_eu.gif" width="80%" >
 </p>
 
-Most of the top 15 countries continue to be European countries, although there are only 6 European countries among the 30 most densely populated countries.
+More than half of the top 15 countries continue to be European countries, although there are only 6 European countries among the 30 most densely populated countries.
 
-Next, we make the Geographical distribution plot of `people_fully_vaccinated_per_hundred`.
+Next, we make the geographical distribution plot of `people_fully_vaccinated_per_hundred`.
 <p align="center">
-<img src="./figs/geo.png" width="100%" >
+<img src="./figs/geo.png" width="80%" >
 </p>
-Analysis:
-Vaccine coverage in Europe and North America is higher.
 
-So let's take a look at the vaccination process in Europe. The time series plot of `new_vaccinations_smoothed_per_million` for the seven most populous countries in Europe is as follows.
+Among the continents, the vaccine coverage in Europe and North America is higher. 
+Let's take a closer look at the vaccination process in Europe. The time series plot of `new_vaccinations_smoothed_per_million` for the seven most populous countries in Europe is as follows.
 <p align="center">
-<img src="./figs/timeseries.png" width="100%" >
+<img src="./figs/timeseries.png" width="80%" >
 </p>
 
 Except for the United Kingdom and Ukraine, the vaccination process in the other 5 countries is similar, with a gradual increase from January to May 2021, and then a decline.
 
-Next, we check if other European countries have similar patterns, and the answer is yes. We select 16 countries with the pattern: Austria, Belgium, Croatia, Czechia, Finland, France, Germany, Greece, Italy, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, and Switzerland. Their time series and the average are shown below.
+Next, we check if other European countries have similar patterns, and the answer is yes. We select 16 countries with the pattern: Austria, Belgium, Croatia, Czechia, Finland, France, Germany, Greece, Italy, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, and Switzerland. Their time series of `new_vaccinations_smoothed_per_million` and their average are shown below.
 
 <p align="center">
 <img src="./figs/selected_16.png" width="80%" >
 </p>
-
-## Tech details
-### Bar chart race plot
-* NOT COMPLETED
-1. Copy the query results from the SQL server to excel and save the document.
-    * Replace NULL with 0.
-    * Rank the columns and rows
-    * Add continent to the table
-2. Make the bar chart race at [flourish](https://flourish.studio/).
