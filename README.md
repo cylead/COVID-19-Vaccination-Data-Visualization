@@ -55,9 +55,21 @@ We can find that many top-ranked countries are countries with small populations,
 <img src="./figs/lower50.gif" width="80%" >
 </p>
 
-Analysis (undone):
-1. Gibraltar
-2. Eu and north America
+### Analysis 
+* We surprisingly found out that the number of Gibraltar is more than 100, read the [news](https://www.standard.co.uk/news/uk/gibraltar-covid-vaccination-programme-entire-adult-population-b924942.html) here for more details.
+* The various color makes it hard to analyze, so we just focus on the European countries and get the following chart of `total_vaccinations_per_hundred`.
+<p align="center">
+<img src="./figs/total_eu.gif" width="80%" >
+</p>
+
+European countries were the first to be vaccinated, but starting in March, other countries have gradually caught up. About 10 of the top 25 countries are European countries from March.
+
+What about the countries with the top 50% population?
+<p align="center">
+<img src="./figs/top50_eu.gif" width="80%" >
+</p>
+
+Most of the top 15 countries continue to be European countries, although there are only 6 European countries among the 30 most densely populated countries.
 
 Next, we make the Geographical distribution plot of `people_fully_vaccinated_per_hundred`.
 <p align="center">
@@ -73,7 +85,7 @@ So let's take a look at the vaccination process in Europe. The time series plot 
 
 Except for the United Kingdom and Ukraine, the vaccination process in the other 5 countries is similar, with a gradual increase from January to May 2021, and then a decline.
 
-Next, we check if other European countries have similar patterns, and the answer is yes. We select 16 countries with the pattern: Austria, Belgium, Croatia, Czechia, Finland, France, Germany, Greece, Italy, Lithuania, Netherlands, Norwat, Poland, Spain, Sweden, and Switzerland. Their time series and the average are shown below.
+Next, we check if other European countries have similar patterns, and the answer is yes. We select 16 countries with the pattern: Austria, Belgium, Croatia, Czechia, Finland, France, Germany, Greece, Italy, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, and Switzerland. Their time series and the average are shown below.
 
 <p align="center">
 <img src="./figs/selected_16.png" width="80%" >
