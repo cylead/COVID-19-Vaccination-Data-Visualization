@@ -73,6 +73,12 @@ So let's take a look at the vaccination process in Europe. The time series plot 
 
 Except for the United Kingdom and Ukraine, the vaccination process in the other 5 countries is similar, with a gradual increase from January to May 2021, and then a decline.
 
+Next, we check if other European countries have similar patterns, and the answer is yes. We select 16 countries with the pattern: Austria, Belgium, Croatia, Czechia, Finland, France, Germany, Greece, Italy, Lithuania, Netherlands, Norwat, Poland, Spain, Sweden, and Switzerland. Their time series and the average are shown below.
+
+<p align="center">
+<img src="./figs/selected_16.png" width="80%" >
+</p>
+
 ## Tech details
 ### Bar chart race plot
 * NOT COMPLETED
