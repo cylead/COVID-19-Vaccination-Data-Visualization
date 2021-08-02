@@ -1,12 +1,12 @@
-### COVID-19 Vaccination Data Visualization
-#### Basic info
+# COVID-19 Vaccination Data Visualization
+## Basic info
 Data source: [Data on COVID-19 (coronavirus) by Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data) up to 7/19/2021.
 
 Tools: 
 * Data processing: Microsoft SQL Server Management & excel
 * Visualization: flourish & tableau
 
-#### Feature analysis
+## Feature analysis
 First, let us go through the columns in the total data sets, which can be divided into the following categories: 
 * cases: (smoothed) total/new cases/deaths (per million)
 
@@ -29,7 +29,7 @@ weekly ones
 
 We are interested in the vaccination data in this project, and if necessary, we can consider the correlation between the other data above and vaccination.
 
-#### Vaccination data analysis
+## Vaccination data analysis
 All data columns: `total_vaccinations`, `people_vaccinated`, `people_fully_vaccinated`, `new_vaccinations`, `new_vaccinations_smoothed,` `total_vaccinations_per_hundred,` `people_vaccinated_per_hundred`, `people_fully_vaccinated_per_hundred`, `new_vaccinations_smoothed_per_million`.
 
 For the comparison between countries, we focus on the total vaccinations, not the new vaccination per day.
@@ -73,8 +73,8 @@ So let's take a look at the vaccination process in Europe. The time series plot 
 
 Except for the United Kingdom and Ukraine, the vaccination process in the other 5 countries is similar, with a gradual increase from January to May 2021, and then a decline.
 
-#### Tech details
-##### Bar chart race plot
+## Tech details
+### Bar chart race plot
 * NOT COMPLETED
 1. Copy the query results from the SQL server to excel and save the document.
     * Replace NULL with 0.
