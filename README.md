@@ -1,5 +1,7 @@
 # COVID-19 Vaccination Data Visualization
 ## Basic info
+In this project, we visualize and analyze the COVID-19 vaccination data in countries all over the world, especially European countries.
+
 Data source: [Data on COVID-19 (coronavirus) by Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data) up to 7/19/2021.
 
 Tools: 
@@ -38,6 +40,11 @@ The available options are: `total_vaccinations,` `total_vaccinations_per_hundred
 The indicator that best reflects the coverage of vaccination is `people_fully_vaccinated_per_hundred`. 
 
 However, the statistical data types of different countries are different, which leads to some columns with many missing values. Let's also choose `total_vaccinations_per_hundred` with the fewest missing values to study.
+
+### Choose the chart type
+We want to study the vaccination process of countries around the world, but putting the data of more than two hundred countries and regions on one map will be a mess, so we only choose the top countries.
+In addition, we also want to study the changes over time. If we use a time series plot, we may need to plot all the countries that were top at a certain time, which will still include many countries.
+Considering the above factors, we choose a bar chart rase for visualization.
 
 Here is the bar chart race of `total_vaccinations_per_hundred` data starting from 1/10/2021.
 
