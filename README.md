@@ -1,5 +1,7 @@
 # COVID-19 Vaccination Data Visualization
+
 ## Basic info
+
 In this project, we visualize and analyze the COVID-19 vaccination data in countries all over the world, especially European countries.
 
 Data source: [Data on COVID-19 (coronavirus) by Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data) up to 7/19/2021.
@@ -9,6 +11,7 @@ Tools:
 * Visualization: flourish & tableau
 
 ## Feature analysis
+
 First, let us go through the columns in the total data sets, which can be divided into the following categories: 
 * cases: (smoothed) total/new cases/deaths (per million)
 
@@ -31,6 +34,7 @@ median_age, aged 65/70 older
 We are interested in the vaccination data in this project, and if necessary, we can consider the correlation between the other data above and vaccination.
 
 ## Vaccination data analysis
+
 All data columns: `total_vaccinations`, `people_vaccinated`, `people_fully_vaccinated`, `new_vaccinations`, `new_vaccinations_smoothed,` `total_vaccinations_per_hundred,` `people_vaccinated_per_hundred`, `people_fully_vaccinated_per_hundred`, `new_vaccinations_smoothed_per_million`.
 
 For the comparison between countries, we focus on the total vaccinations, not the new vaccination per day.
@@ -42,9 +46,20 @@ The indicator that best reflects the coverage of vaccination is `people_fully_va
 However, the statistical data types of different countries are different, which leads to some columns with many missing values. Let's also choose `total_vaccinations_per_hundred` with the fewest missing values to study.
 
 ### Choose the chart type
+
 We want to study the vaccination process of countries around the world, but putting the data of more than two hundred countries and regions on one map will be a mess, so we only choose the top countries.
+
 In addition, we also want to study the changes over time. If we use a time series plot, we may need to plot all the countries that were top at a certain time, which will still include many countries.
+
 Considering the above factors, we choose a bar chart rase for visualization.
+
+### Data process
+
+The statistics of different timestamps are listed row by row in the dataset, but we need specific data with the timestamp in rows, which is the requirement for the Flourish bar chart race.  
+
+We can use the **PIVIT** relational operator to perform it in SQL Server if the number of rows/timestamps is fixed and small. But if there are too many rows/timestamps (like in this case), we need to use **dynamic query**. You can find the tutorial [here](https://www.databasejournal.com/features/mssql/converting-rows-to-columns-pivot-and-columns-to-rows-unpivot-in-sql-server.html).
+
+### Visualiztion results
 
 Here is the bar chart race of `total_vaccinations_per_hundred` data starting from 1/10/2021.
 
@@ -62,6 +77,7 @@ We can find that many top-ranked countries are countries with small populations,
 </p>
 
 ### Analysis 
+
 * We surprisingly found out that the number of Gibraltar is more than 100, read the [news](https://www.standard.co.uk/news/uk/gibraltar-covid-vaccination-programme-entire-adult-population-b924942.html) for more details.
 * The various color makes it hard to analyze, so we just focus on the European countries and get the following chart of `total_vaccinations_per_hundred`.
 <p align="center">
