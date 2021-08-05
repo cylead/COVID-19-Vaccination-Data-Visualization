@@ -76,8 +76,6 @@ We can find that many top-ranked countries are countries with small populations,
 <img src="./figs/lower50.gif" width="80%" >
 </p>
 
-### Analysis 
-
 * We surprisingly found out that the number of Gibraltar is more than 100, read the [news](https://www.standard.co.uk/news/uk/gibraltar-covid-vaccination-programme-entire-adult-population-b924942.html) for more details.
 * The various color makes it hard to analyze, so we just focus on the European countries and get the following chart of `total_vaccinations_per_hundred`.
 <p align="center">
@@ -111,3 +109,13 @@ Next, we check if other European countries have similar patterns, and the answer
 <p align="center">
 <img src="./figs/selected_16.png" width="80%" >
 </p>
+
+Next, we are going to focus on the different types of vaccines. Unfortunately, there are only 33 countries’ data. 
+
+<p align="center">
+<img src="./figs/vac_manu.png" width="100%" >
+</p>
+
+If we sum up the doses for each different vaccine, we could see that Pfizer is the most vaccinated. It is most vaccinated in 29 among the 33 countries. The exceptions are:
+
+Chile and Uruguay use Sinovac, Switzerland and Liechtenstein use Moderna.

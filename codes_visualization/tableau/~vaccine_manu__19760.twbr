@@ -1,0 +1,807 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet2 (vaccination_manu)' inline='true' name='federated.0a3n3qi0448qvo17l9b0t079b0k3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='vaccination_manu' name='excel-direct.1gc2z1v19srvxt0zsig6l179c00t'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/job/project/COVID-19-Vaccination-Data-Visualization/data/for_tableau/vaccination_manu.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1gc2z1v19srvxt0zsig6l179c00t' name='Sheet2' table='[Sheet2$]' type='table'>
+          <columns gridOrigin='A1:B4:no:A1:B4:0' header='yes' outcome='6'>
+            <column datatype='string' name='most_vaccine' ordinal='0' />
+            <column datatype='integer' name='number_of_countries' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1gc2z1v19srvxt0zsig6l179c00t' name='Sheet2' table='[Sheet2$]' type='table'>
+          <columns gridOrigin='A1:B4:no:A1:B4:0' header='yes' outcome='6'>
+            <column datatype='string' name='most_vaccine' ordinal='0' />
+            <column datatype='integer' name='number_of_countries' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B4:no:A1:B4:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>most_vaccine</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[most_vaccine]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>most_vaccine</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet2_C2D92B184BB54CF59527BB80D345DAC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_countries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_countries]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>number_of_countries</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet2_C2D92B184BB54CF59527BB80D345DAC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet2' datatype='table' name='[__tableau_internal_object_id__].[Sheet2_C2D92B184BB54CF59527BB80D345DAC2]' role='measure' type='quantitative' />
+      <column caption='Most Vaccine' datatype='string' name='[most_vaccine]' role='dimension' type='nominal' />
+      <column caption='Number Of Countries' datatype='integer' name='[number_of_countries]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet2' id='Sheet2_C2D92B184BB54CF59527BB80D345DAC2'>
+            <properties context=''>
+              <relation connection='excel-direct.1gc2z1v19srvxt0zsig6l179c00t' name='Sheet2' table='[Sheet2$]' type='table'>
+                <columns gridOrigin='A1:B4:no:A1:B4:0' header='yes' outcome='6'>
+                  <column datatype='string' name='most_vaccine' ordinal='0' />
+                  <column datatype='integer' name='number_of_countries' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (vaccination_manu)' inline='true' name='federated.1fttvwk1pf6pl7110o0ya1px9b9i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='vaccination_manu' name='excel-direct.1muc5971qfbfkc1844nby0pamsy3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/job/project/COVID-19-Vaccination-Data-Visualization/data/for_tableau/vaccination_manu.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1muc5971qfbfkc1844nby0pamsy3' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D34:no:A1:D34:0' header='yes' outcome='6'>
+            <column datatype='string' name='location' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='vaccine' ordinal='2' />
+            <column datatype='integer' name='total_vaccinations' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1muc5971qfbfkc1844nby0pamsy3' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D34:no:A1:D34:0' header='yes' outcome='6'>
+            <column datatype='string' name='location' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='vaccine' ordinal='2' />
+            <column datatype='integer' name='total_vaccinations' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D34:no:A1:D34:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_13FEEF9CE715463DAE5B870B87424ED6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_13FEEF9CE715463DAE5B870B87424ED6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccine</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[vaccine]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>vaccine</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_13FEEF9CE715463DAE5B870B87424ED6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_vaccinations]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>total_vaccinations</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_13FEEF9CE715463DAE5B870B87424ED6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_13FEEF9CE715463DAE5B870B87424ED6]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Total Vaccinations' datatype='integer' name='[total_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_13FEEF9CE715463DAE5B870B87424ED6'>
+            <properties context=''>
+              <relation connection='excel-direct.1muc5971qfbfkc1844nby0pamsy3' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D34:no:A1:D34:0' header='yes' outcome='6'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='string' name='vaccine' ordinal='2' />
+                  <column datatype='integer' name='total_vaccinations' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet3 (vaccination_manu)' inline='true' name='federated.0sz3o5l0or43sh1aozsb01egb4ga' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='vaccination_manu' name='excel-direct.10lsr8d07uw6h110ljn7y165lcy7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/job/project/COVID-19-Vaccination-Data-Visualization/data/for_tableau/vaccination_manu.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.10lsr8d07uw6h110ljn7y165lcy7' name='Sheet3' table='[Sheet3$]' type='table'>
+          <columns gridOrigin='A1:B9:no:A1:B9:0' header='yes' outcome='6'>
+            <column datatype='string' name='vaccine' ordinal='0' />
+            <column datatype='integer' name='sum_vaccinations' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.10lsr8d07uw6h110ljn7y165lcy7' name='Sheet3' table='[Sheet3$]' type='table'>
+          <columns gridOrigin='A1:B9:no:A1:B9:0' header='yes' outcome='6'>
+            <column datatype='string' name='vaccine' ordinal='0' />
+            <column datatype='integer' name='sum_vaccinations' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B9:no:A1:B9:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccine</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[vaccine]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>vaccine</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet3_67B0192C86954E0497685EF7ECB7D557]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum_vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum_vaccinations]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>sum_vaccinations</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet3_67B0192C86954E0497685EF7ECB7D557]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet3' datatype='table' name='[__tableau_internal_object_id__].[Sheet3_67B0192C86954E0497685EF7ECB7D557]' role='measure' type='quantitative' />
+      <column caption='Sum Vaccinations' datatype='integer' name='[sum_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet3' id='Sheet3_67B0192C86954E0497685EF7ECB7D557'>
+            <properties context=''>
+              <relation connection='excel-direct.10lsr8d07uw6h110ljn7y165lcy7' name='Sheet3' table='[Sheet3$]' type='table'>
+                <columns gridOrigin='A1:B9:no:A1:B9:0' header='yes' outcome='6'>
+                  <column datatype='string' name='vaccine' ordinal='0' />
+                  <column datatype='integer' name='sum_vaccinations' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Vaccination geographical distritution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (vaccination_manu)' name='federated.1fttvwk1pf6pl7110o0ya1px9b9i' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1fttvwk1pf6pl7110o0ya1px9b9i'>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vaccine]' derivation='None' name='[none:vaccine:nk]' pivot='key' type='nominal' />
+            <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1fttvwk1pf6pl7110o0ya1px9b9i].[none:vaccine:nk]' />
+              <lod column='[federated.1fttvwk1pf6pl7110o0ya1px9b9i].[none:location:nk]' />
+              <geometry column='[federated.1fttvwk1pf6pl7110o0ya1px9b9i].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1fttvwk1pf6pl7110o0ya1px9b9i].[Latitude (generated)]</rows>
+        <cols>[federated.1fttvwk1pf6pl7110o0ya1px9b9i].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7E506CAF-CA48-440F-8FAD-E4C50EEF1C3E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most-vaccinated vaccines sum up by countries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet2 (vaccination_manu)' name='federated.0a3n3qi0448qvo17l9b0t079b0k3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0a3n3qi0448qvo17l9b0t079b0k3'>
+            <column caption='Most Vaccine' datatype='string' name='[most_vaccine]' role='dimension' type='nominal' />
+            <column-instance column='[most_vaccine]' derivation='None' name='[none:most_vaccine:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Countries' datatype='integer' name='[number_of_countries]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_countries]' derivation='Sum' name='[sum:number_of_countries:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0a3n3qi0448qvo17l9b0t079b0k3].[none:most_vaccine:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Pfizer/BioNTech&quot;</bucket>
+              <bucket>&quot;Moderna&quot;</bucket>
+              <bucket>&quot;Sinovac&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0a3n3qi0448qvo17l9b0t079b0k3].[sum:number_of_countries:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='49' />
+            <format attr='height' field='[federated.0a3n3qi0448qvo17l9b0t079b0k3].[none:most_vaccine:nk]' value='38' />
+            <format attr='width' field='[federated.0a3n3qi0448qvo17l9b0t079b0k3].[none:most_vaccine:nk]' value='188' />
+            <format attr='text-align' data-class='subtotal' scope='cols' value='center' />
+            <format attr='vertical-align' data-class='total' scope='cols' value='center' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='vertical-align' data-class='total' scope='rows' value='center' />
+            <format attr='text-align' field='[federated.0a3n3qi0448qvo17l9b0t079b0k3].[sum:number_of_countries:qk]' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0a3n3qi0448qvo17l9b0t079b0k3].[none:most_vaccine:nk]' value='center' />
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='text-align' scope='rows' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0a3n3qi0448qvo17l9b0t079b0k3].[sum:number_of_countries:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0a3n3qi0448qvo17l9b0t079b0k3].[none:most_vaccine:nk]</cols>
+      </table>
+      <simple-id uuid='{3E7A2C8C-2D86-4A8C-8CBC-C9EEF0FDE936}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sum of different vaccines in 33 countries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet3 (vaccination_manu)' name='federated.0sz3o5l0or43sh1aozsb01egb4ga' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sz3o5l0or43sh1aozsb01egb4ga'>
+            <column-instance column='[vaccine]' derivation='None' name='[none:vaccine:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sum_vaccinations]' derivation='Sum' name='[sum:sum_vaccinations:qk]' pivot='key' type='quantitative' />
+            <column caption='Sum Vaccinations' datatype='integer' name='[sum_vaccinations]' role='measure' type='quantitative' />
+            <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]' value='45' />
+            <format attr='text-format' field='[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]' value='n#,##0,,.0M;-#,##0,,.0M' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='206' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='501' />
+                <format attr='maxwidth' value='501' />
+                <format attr='minheight' value='360' />
+                <format attr='maxheight' value='360' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</rows>
+        <cols>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Sinopharm/Beijing&quot;</value>
+                <value>2092905</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Sputnik V&quot;</value>
+                <value>1847293</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;CanSino&quot;</value>
+                <value>506741</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[none:vaccine:nk]</field>
+                  <field>[federated.0sz3o5l0or43sh1aozsb01egb4ga].[sum:sum_vaccinations:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Johnson&amp;Johnson&quot;</value>
+                <value>25023088</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{DE1FB533-000F-4DCC-A58C-FECD94F445B7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1400' minheight='800' minwidth='1400' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='9' param='horz' w='98666' x='667' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='7' w='98666' x='667' y='1000'>
+              <zone h='98000' id='6' name='Sheet 1' w='41500' x='667' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='60375' id='11' name='Sheet 3' w='57166' x='42167' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37625' id='12' name='Sheet 2' w='57166' x='42167' y='61375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10625' id='10' name='Sheet 1' pane-specification-id='0' param='[federated.1fttvwk1pf6pl7110o0ya1px9b9i].[none:vaccine:nk]' w='41250' x='11167' y='67125' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{48A7C3F6-CF79-4240-8A0E-554EDEA2B8AF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='89'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fttvwk1pf6pl7110o0ya1px9b9i].[none:vaccine:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{606B3A2B-EC72-4C64-B82C-2460C27C996A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66D90501-2292-400C-872F-569B71B47ED8}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{36AE97C2-4541-4C2E-B5AC-092D0D1DC3D9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{72A805BE-DF41-45B7-843F-316232BABB27}' />
+    </window>
+  </windows>
+</workbook>
